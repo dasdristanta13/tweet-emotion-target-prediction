@@ -1,3 +1,4 @@
 *.xlsx
 .gradio/
 emotion_model/
+__pycaches__/
