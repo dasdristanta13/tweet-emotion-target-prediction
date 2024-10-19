@@ -1,3 +1,9 @@
+---
+title: Twitter_Emotion_and_Target_Prediction
+app_file: run_gradio_v3.py
+sdk: gradio
+sdk_version: 5.1.0
+---
 # Tweet Emotion and Target Prediction
 
 This project implements a machine learning pipeline for predicting the emotion and target of tweets. It includes model training, data preprocessing, data augmentation, inference, and a Gradio-based web interface for easy interaction.
@@ -12,7 +18,7 @@ This project implements a machine learning pipeline for predicting the emotion a
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/tweet-emotion-target-prediction.git
+   git clone https://github.com/dasdristanta13/tweet-emotion-target-prediction.git
    cd tweet-emotion-target-prediction
    ```
 
