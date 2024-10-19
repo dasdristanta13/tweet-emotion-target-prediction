@@ -8,3 +8,5 @@ gradio
 joblib 
 imbalanced-learn 
 xgboost
+wandb
+nltk

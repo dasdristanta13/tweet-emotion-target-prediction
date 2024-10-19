@@ -26,7 +26,7 @@ This project implements a machine learning pipeline for predicting the emotion a
 
 2. Install the required packages:
    ```bash
-   pip install pandas numpy scikit-learn transformers datasets torch gradio joblib imbalanced-learn xgboost
+   pip install -r requirements.txt
    ```
 
 3. Download the dataset file `NLP Engineer Assignment Dataset (1) (1) (1) (1).xlsx` and place it in the project root directory.
