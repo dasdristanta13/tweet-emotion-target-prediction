@@ -3,8 +3,9 @@ title: Twitter_Emotion_and_Target_Prediction
 app_file: run_gradio_v3.py
 sdk: gradio
 sdk_version: 5.1.0
-Hosted_link: [Twitter_Emotion_and_Target_Prediction](https://huggingface.co/spaces/dasdristanta13/Twitter_Emotion_and_Target_Prediction)
 ---
+
+Hosted_link: [Twitter_Emotion_and_Target_Prediction](https://huggingface.co/spaces/dasdristanta13/Twitter_Emotion_and_Target_Prediction)
 # Tweet Emotion and Target Prediction
 
 This project implements a machine learning pipeline for predicting the emotion and target of tweets. It includes model training, data preprocessing, data augmentation, inference, and a Gradio-based web interface for easy interaction.
