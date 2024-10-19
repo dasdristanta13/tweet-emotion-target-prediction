@@ -3,6 +3,7 @@ title: Twitter_Emotion_and_Target_Prediction
 app_file: run_gradio_v3.py
 sdk: gradio
 sdk_version: 5.1.0
+Hosted_link: [Twitter_Emotion_and_Target_Prediction](https://huggingface.co/spaces/dasdristanta13/Twitter_Emotion_and_Target_Prediction)
 ---
 # Tweet Emotion and Target Prediction
 
