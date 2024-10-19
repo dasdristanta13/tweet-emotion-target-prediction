@@ -77,7 +77,7 @@ This script will:
 To launch the Gradio web interface for interactive predictions, run:
 
 ```bash
-python run_gradio_v2.py
+python run_gradio_v3.py
 ```
 
 This will start a local server and provide a URL to access the web interface.
