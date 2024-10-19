@@ -1,5 +1,5 @@
 
-import joblib
+import os
 import numpy as np
 from transformers import AutoTokenizer, AutoModel, AutoModelForSequenceClassification
 import pandas as pd
@@ -13,8 +13,13 @@ print(f"Using device: {device}")
 
 # Load the model and tokenizer
 model_path = "./emotion_model"
-emotion_model = AutoModelForSequenceClassification.from_pretrained(model_path)
-emotion_tokenizer = AutoTokenizer.from_pretrained(model_path)
+hub_path = "dasdristanta13/twitter-emotion-model"
+if os.path.isdir(model_path):
+    emotion_model = AutoModelForSequenceClassification.from_pretrained(model_path)
+    emotion_tokenizer = AutoTokenizer.from_pretrained(model_path)
+else:
+    emotion_model = AutoModelForSequenceClassification.from_pretrained(hub_path)
+    emotion_tokenizer = AutoTokenizer.from_pretrained(hub_path)
 
 # Move the model to the appropriate device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
