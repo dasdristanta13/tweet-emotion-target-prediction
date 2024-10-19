@@ -97,3 +97,12 @@ The Gradio interface provides:
 - **Predicted target and emotion**: Real-time display of predictions based on user input.
 - **Emotion probabilities**: Displays the probability distribution of the predicted emotions.
 - **Summary table of predictions**: A table summarizing the tweet text, predicted target, emotion, and associated probabilities.
+
+## Types of Metrics to Monitor After Deployment
+- Once the model is live in production, monitoring its behavior is critical for ensuring that it performs as expected. The key types of metrics to track are:
+
+## Model Performance Metrics:
+
+- Accuracy, Precision, Recall, F1 Score for classification models.
+- RMSE, MAE, R² for regression models.
+- AUC-ROC and PRC (Precision-Recall Curve) for imbalanced datasets.

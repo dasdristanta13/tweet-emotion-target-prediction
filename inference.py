@@ -5,6 +5,7 @@ from transformers import AutoTokenizer, AutoModel, AutoModelForSequenceClassific
 import pandas as pd
 import torch
 from sklearn.metrics.pairwise import cosine_similarity
+from utils import *
 
 # Check if CUDA is available and set the device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -76,7 +77,7 @@ def predict_emotion(text, target):
 def process_test_data(test_df):
     results = []
     for _, row in test_df.iterrows():
-        text = row['Tweet']
+        text = clean_text(row['Tweet'])
         predicted_target = predict_target(text)
         predicted_emotion, emotion_probs = predict_emotion(text, predicted_target)
 
